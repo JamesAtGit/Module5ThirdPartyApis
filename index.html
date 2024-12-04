@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Task Board</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+</head>
+<body>
+  <h1>Project Task Board</h1>
+
+  <button id="new-task-btn">Add New Task</button>
+
+  <!-- Task Modal -->
+  <div id="task-modal" style="display:none;">
+    <h2>Create New Task</h2>
+    <input type="text" id="task-title" placeholder="Task Title">
+    <textarea id="task-description" placeholder="Task Description"></textarea>
+    <input type="date" id="task-deadline">
+    <button id="save-task-btn">Save Task</button>
+    <button id="close-modal-btn">Close</button>
+  </div>
+
+  <div id="task-board">
+    <div class="task-column" id="not-started">
+      <h3>Not Yet Started</h3>
+      <ul id="not-started-tasks"></ul>
+    </div>
+    <div class="task-column" id="in-progress">
+      <h3>In Progress</h3>
+      <ul id="in-progress-tasks"></ul>
+    </div>
+    <div class="task-column" id="completed">
+      <h3>Completed</h3>
+      <ul id="completed-tasks"></ul>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

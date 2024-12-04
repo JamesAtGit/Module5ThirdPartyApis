@@ -1,0 +1,61 @@
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 16px;
+}
+
+#task-board {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.task-column {
+  width: 30%;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+#task-modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#task-modal input, #task-modal textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+li {
+  list-style-type: none;
+  background: #ddd;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+li.yellow {
+  background-color: yellow;
+}
+
+li.red {
+  background-color: red;
+}
